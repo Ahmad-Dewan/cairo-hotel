@@ -1,0 +1,66 @@
+/* BookingBar.css */
+.booking-bar {
+  background: var(--dark2);
+  padding: 1.8rem 3rem;
+  display: flex;
+  gap: 1px;
+  align-items: stretch;
+  flex-wrap: wrap;
+  border-bottom: 2px solid var(--gold);
+}
+
+.booking-bar__field {
+  flex: 1;
+  min-width: 160px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem 1.2rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.booking-bar__field label {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.4rem;
+}
+
+.booking-bar__field input,
+.booking-bar__field select {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.booking-bar__field select option {
+  background: var(--dark2);
+  color: var(--white);
+}
+
+.booking-bar__submit {
+  background: var(--gold);
+  border: none;
+  padding: 0 2rem;
+  color: var(--dark);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 500;
+  min-width: 160px;
+  transition: background 0.2s;
+}
+
+.booking-bar__submit:hover { background: var(--gold-light); }
+
+@media (max-width: 900px) {
+  .booking-bar { padding: 1.5rem; }
+  .booking-bar__submit { min-width: 100%; padding: 1rem; margin-top: 0.5rem; }
+}
